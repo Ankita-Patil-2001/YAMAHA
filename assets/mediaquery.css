@@ -1,0 +1,133 @@
+@media (min-width: 1024px) {
+  .container2 {
+    height: 850px;
+  }
+  td {
+    height: 60px;
+  }
+}
+/* @media (min-width: 2560px) {
+    .container2 {
+      height: "full";
+    }
+  } */
+@media (min-width: 1440px) {
+  .container2 {
+    height: 850px;
+  }
+}
+@media (min-width: 1920px) {
+    .container2 {
+        height: 1100px;
+      }
+      td {
+        height: 90px;
+        font-size: 20px;
+      }
+      th {
+        font-size: 21px;
+      }
+      .radiobtn {
+        font-size: 40px;
+      }
+      button {
+        padding: 12px 30px;
+        font-size: 18px;
+        border-radius: 35px;
+      }
+      .footer button {
+        padding: 12px 35px;
+        font-size: 18px;
+        border-radius: 35px;
+      }
+      .reset-btn {
+        border-radius: 35px;
+      }
+      .tab1 span{
+        font-size: 20px;
+      }
+      .tab span{
+        font-size: 20px;
+      }
+      .header h1 {
+        font-size: 24px;
+        font-weight: 700;
+      }
+      .row {
+        margin-bottom: 25px;
+      }
+      .input-group input,
+    .input-group select {
+      padding: 20px;
+      border-radius: 10px;
+    }
+    .input-group label
+     {
+      font-size: 17px;
+    }
+    .input-group :placeholder-shown {
+      font-size: 17px;
+    }
+    .input-group select {
+      font-size: 17px;
+    }
+    .status label {
+      font-size: 20px;
+    }
+    .status2 label {
+      font-size: 20px;
+    }
+    input[type="radio"] {
+      transform: scale(1.8);
+      margin-left: 17px;
+      margin-right: 7px;
+      background-color: transparent;
+    }
+    .apply-btn {
+      font-size: 18px;
+    }
+}
+@media (min-width: 1920px) {
+  .imgfolder {
+    width: 45px;
+    height: 45px;
+  }
+  .greaterimg {
+    width: 17px;
+    height: 17px;
+  }
+  .master,
+  .internal {
+    font-size: 16px;
+  }
+  .icon-circle {
+    border-radius: 50%;
+    padding: 15px;
+    height: 45px;
+  }
+  .profile {
+    padding: 10px 15px;
+    border-radius: 30px;
+  }
+  .nav-text {
+    font-size: 18px;
+  }
+  .folder {
+    width: 40px;
+    height: 40px;
+   
+  }
+  .nav-text133 {
+    width: 22px;
+    height: 22px;
+    margin-left: 100px;
+  }
+  .nav-text1{
+    width: 22px;
+    height: 22px;
+  }
+  #master.active .nav-text133 {
+    transform: rotate(180deg);
+    margin-left: 10px;
+  }
+}

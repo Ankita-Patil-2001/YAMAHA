@@ -17,76 +17,128 @@
   }
 }
 @media (min-width: 1920px) {
-    .container2 {
-        height: 1100px;
-      }
-      td {
-        height: 90px;
-        font-size: 20px;
-      }
-      th {
-        font-size: 21px;
-      }
-      .radiobtn {
-        font-size: 40px;
-      }
-      button {
-        padding: 12px 30px;
-        font-size: 18px;
-        border-radius: 35px;
-      }
-      .footer button {
-        padding: 12px 35px;
-        font-size: 18px;
-        border-radius: 35px;
-      }
-      .reset-btn {
-        border-radius: 35px;
-      }
-      .tab1 span{
-        font-size: 20px;
-      }
-      .tab span{
-        font-size: 20px;
-      }
-      .header h1 {
-        font-size: 24px;
-        font-weight: 700;
-      }
-      .row {
-        margin-bottom: 25px;
-      }
-      .input-group input,
-    .input-group select {
-      padding: 20px;
-      border-radius: 10px;
-    }
-    .input-group label
-     {
-      font-size: 17px;
-    }
-    .input-group :placeholder-shown {
-      font-size: 17px;
-    }
-    .input-group select {
-      font-size: 17px;
-    }
-    .status label {
-      font-size: 20px;
-    }
-    .status2 label {
-      font-size: 20px;
-    }
-    input[type="radio"] {
-      transform: scale(1.8);
-      margin-left: 17px;
-      margin-right: 7px;
-      background-color: transparent;
-    }
-    .apply-btn {
-      font-size: 18px;
-    }
+  .container2 {
+    height: 1140px;
+  }
+  td {
+    height: 90px;
+    font-size: 20px;
+  }
+  th {
+    font-size: 21px;
+  }
+  .radiobtn {
+    font-size: 40px;
+  }
+  button {
+    padding: 12px 30px;
+    font-size: 18px;
+    border-radius: 35px;
+  }
+  .footer button {
+    padding: 12px 35px;
+    font-size: 18px;
+    border-radius: 35px;
+  }
+  .reset-btn {
+    border-radius: 35px;
+  }
+  .tab1 span {
+    font-size: 23px;
+  }
+  .tab span {
+    font-size: 23px;
+  }
+  .header h1 {
+    font-size: 28px;
+    font-weight: 700;
+  }
+  .row {
+    margin-bottom: 25px;
+  }
+  .input-group input,
+  .input-group select {
+    padding: 20px;
+    border-radius: 10px;
+  }
+  .input-group label {
+    font-size: 17px;
+  }
+  .input-group :placeholder-shown {
+    font-size: 17px;
+  }
+  .input-group select {
+    font-size: 17px;
+  }
+  .status label {
+    font-size: 20px;
+  }
+  .status2 label {
+    font-size: 20px;
+  }
+  /* input[type="radio"] {
+  transform: scale(1.8);
+  margin-left: 17px;
+  margin-right: 7px;
+  background-color: transparent;
+} */
+  .apply-btn {
+    font-size: 18px;
+  }
+  /* .status2 input[type="radio"] {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid white;
+  outline: none;
+  margin-left: 17px;
+  margin-right: 7px;
+  background-color: transparent;
+  cursor: pointer;
+  position: relative;
 }
+.status2 input[type="radio"]:checked::before {
+  content: '';
+  width: 10px;
+  height: 10px;
+  background-color: white;   ;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+} */
+  .status2 input[type="radio"] {
+    appearance: none; /* Remove default radio button */
+    width: 25px; /* Adjust the size */
+    height: 25px; /* Adjust the size */
+    border-radius: 50%; /* Make it circular */
+    border: 2px solid white; /* White border */
+    outline: none; /* Remove the focus outline that causes blur */
+    margin-left: 17px;
+    margin-right: 7px;
+    background-color: transparent;
+    cursor: pointer;
+    position: relative;
+    margin-top: 14px;
+  }
+  .status2 input[type="radio"]:checked::before {
+    content: "";
+    width: 10px; /* Inner circle size */
+    height: 10px; /* Inner circle size */
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+  }
+  .status2 input[type="radio"]:checked {
+    background: linear-gradient(90deg, hsl(308, 53%, 82%), #eeb5e0);
+  }
+  
+}
+
 @media (min-width: 1920px) {
   .imgfolder {
     width: 45px;
@@ -115,14 +167,13 @@
   .folder {
     width: 40px;
     height: 40px;
-   
   }
   .nav-text133 {
     width: 22px;
     height: 22px;
     margin-left: 100px;
   }
-  .nav-text1{
+  .nav-text1 {
     width: 22px;
     height: 22px;
   }

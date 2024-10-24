@@ -851,8 +851,7 @@ option {
   font-weight: 700;
 }
 
-@media only screen and (min-width: 2560px) {
-  .container2 {
-    height: 1800px;
-  }
+.status2 label {
+  padding-right: 20px;
+  
 }

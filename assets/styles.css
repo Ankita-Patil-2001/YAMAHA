@@ -548,7 +548,7 @@ html {
   margin-right: 10px;
   color: #ffffff;
   font-size: 12px;
-  font-weight: 700;
+  font-weight: 500;
   line-height: 14.5px;
 }
 .status {
@@ -558,7 +558,7 @@ html {
 .status label {
   color: #ffffff;
   font-size: 12px;
-  font-weight: 700;
+  font-weight: 500;
   line-height: 14.4px;
   padding: 0;
   margin-top: 20px;
@@ -858,4 +858,40 @@ option {
 .status2{
   display: flex;
   justify-items: center;
+}
+.status label {
+  font-size: 14px;
+}
+.status2 label {
+  font-size: 14px;
+}
+.apply-btn {
+  font-size: 14px;
+}
+.status2 input[type="radio"] {
+  appearance: none; /* Remove default radio button */
+  width: 20px;      /* Adjust the size */
+  height: 20px;     /* Adjust the size */
+  border-radius: 50%; /* Make it circular */
+  border: 2px solid white; /* White border */
+  outline: none; /* Remove the focus outline that causes blur */
+  margin-right: 7px;
+  background-color: transparent;
+  cursor: pointer;
+  position: relative;
+  margin-top: 14.5px;
+}
+.status2 input[type="radio"]:checked::before {
+  content: '';
+  width: 8px;  /* Inner circle size */
+  height: 8px; /* Inner circle size */
+  background-color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+}
+.status2 input[type="radio"]:checked {
+  background: linear-gradient(90deg, hsl(308, 53%, 82%), #EEB5E0);
 }

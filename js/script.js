@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const submenuItems = document.querySelectorAll('.has-submenu');
     const tabs = document.querySelectorAll('.tabs2 .tab');
     const contents = document.querySelectorAll('.content');
-    const container1 = document.querySelector('.container1'); // Content for Tab 1
+    const container1 = document.querySelector('.container1'); 
 
     // Sidebar toggle functionality
     toggleSidebarBtn.addEventListener("click", function () {

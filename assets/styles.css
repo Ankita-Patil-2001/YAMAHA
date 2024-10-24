@@ -855,3 +855,7 @@ option {
   padding-right: 20px;
   
 }
+.status2{
+  display: flex;
+  justify-items: center;
+}

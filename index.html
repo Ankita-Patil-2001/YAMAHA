@@ -162,254 +162,903 @@
           
         </header>
     
-            <div class="tabs">
-              <div class="tab1">
-                <span class="dot" style="background-color: #00C4CC"></span>
-                <span class="tab-title">IR01_01: Internal Request Dr...×</span>
+        <!-- <div class="tabs2">
+          <div class="tab" data-tab="1">Tab 1</div>
+          <div class="tab" data-tab="2">Tab 2</div>
+          <div class="tab" data-tab="3">Tab 3</div>
+          <div class="tab" data-tab="4">Tab 4</div>
+        </div> -->
+          <div class="tabs2">
+            <div class="tab" data-tab="1">
+              <span class="dot" style="background-color: #00C4CC"></span>
+              <span class="tab-title">IR01_01: Internal Request Dr...×</span>
+            </div>
+            <div class="tab" data-tab="2">
+              <span class="dot" style="background-color: #FF4D4D"></span>
+              <span class="tab-title">IR01_01: Internal Request Draft</span>
+            </div>
+            <div class="tab" data-tab="3">
+              <span class="dot" style="background-color: #50BFFF"></span>
+              <span class="tab-title">IR01_01: Internal Request Draft</span>
+            </div>
+            <div class="tab" data-tab="4">
+              <span class="dot" style="background-color: #8B5AD6"></span>
+              <span class="tab-title">IR01_01: Internal Request Draft</span>
+            </div>
+          </div>
+
+       
+          <div class="content-sections">
+            <div class="content" id="content-1"></div>
+            <div class="content" id="content-2" style="display: none;"></div>
+            <div class="content" id="content-3" style="display: none;"></div>
+            <div class="content" id="content-4" style="display: none;"></div>
+          </div>
+          <div id="container2-1" class="container2">
+            <div class="header">
+              <h1>IR01_01: Internal Request Draft/Returned</h1>
+              <div class="buttons">
+                <button class="retrieve-btn">Retrieve</button>
+                <button class="download-btn">Download</button>
+                <button class="reset-btn">Reset</button>
               </div>
-              <div class="tabs2">
-                <div class="tab">
-                  <span class="dot" style="background-color: #FF4D4D"></span>
-                  <span class="tab-title">IR01_01: Internal Request Draft</span>
+            </div>
+            <div id="grid1" class="form">
+              <div class="row">
+                <div class="input-group">
+                  <label for="product-group ">Product Group</label>
+                  <input
+                    type="text"
+                    id="product-group"
+                    placeholder="Enter Product Group "/>
+                  <i class="fas fa-search search-icon"></i>
+      
+                
                 </div>
-                <div class="tab">
-                  <span class="dot" style="background-color: #50BFFF"></span>
-                  <span class="tab-title">IR01_01: Internal Request Draft</span>
+                <div class="input-group">
+                  <label for="sub-group">Sub Group</label>
+                  <input type="text" id="sub-group" placeholder="Enter Sub Group" />
+                  <i class="fas fa-search search-icon2"></i>
                 </div>
-                <div class="tab">
-                  <span class="dot" style="background-color: #8B5AD6"></span>
-                  <span class="tab-title">IR01_01: Internal Request Draft</span>
+                <div class="input-group">
+                  <label for="category">Category</label>
+                  <input
+                    type="text"
+                    id="category"
+                    placeholder="CO-COM: Consumable Common"/>
+                    <i class="fas fa-search search-icon3"></i>
                 </div>
-                <div class="tab">
-                  <span class="tab-title"></span>
+              </div>
+              <div class="row">
+                <div class="input-group">
+                  <label for="company-code">Company Code</label>
+                  <input
+                    type="text"
+                    id="company-code"
+                    placeholder="Enter Company Code"
+                  />
+                  <i class="fas fa-search search-icon4"></i>
+                </div>
+                <div class="input-group">
+                  <label for="company-code">Part Code</label>
+                  <input
+                    type="text"
+                    id="company-code"
+                    placeholder="Enter Company Code"
+                  />
+                  <i class="fas fa-search search-icon5"></i>
+                </div>
+                <div class="input-group">
+                  <label for="part-code">Match Code</label>
+                  <select id="part-code">
+                    <option value="1" class="drop">Select</option>
+                    <option value="1" class="drop">Item 1 is selected</option>
+                    <option value="2" class="drop">Item 2 is hovered</option>
+                    <option value="3" class="drop">Item 3 is being displayed</option>
+                    <option value="3" class="drop">Item 4 is being displayed</option>
+                    <option value="3" class="drop">Item 5 is being displayed</option>
+
+                  </select>
+                </div>
+              </div>
+              <div class="status">
+                <label>Status</label>
+                <div class="status1">
+                  <div class="status2">
+                    <input type="radio" name="status" value="new" id="new" />
+                    <label for="new">New</label>
+                    <input
+                      type="radio"
+                      name="status"
+                      value="returned"
+                      id="returned"
+                    />
+                    <label for="returned">Returned</label>
+                    <input
+                      type="radio"
+                      name="status"
+                      value="re-submitted"
+                      id="re-submitted"
+                    />
+                    <label for="re-submitted">Re-Submitted</label>
+                    <input
+                      type="radio"
+                      name="status"
+                      value="rejected"
+                      id="rejected"
+                    />
+                    <label for="rejected">Rejected</label>
+                    <input
+                    type="radio"
+                    name="status"
+                    value="rejected"
+                    id="rejected"
+                  />
+                    <label for="rejected">Submitted</label>
+                    
+
+                  </div>
+                  <div class="actions">
+                    <button class="apply-btn">Apply Filter Conditions</button>
+                  </div>
                 </div>
               </div>
             </div>
+            <table class="tablewidth">
+              <thead>    
+                  <tr>
+                      <th>Select</th>
+                      <th>Category Name</th>
+                      <th>Vendor</th>
+                      <th>Part No.(Draft)</th>
+                      <th>EPROC II Part No.</th>
+                      <th>Shop Code</th>
+                      <th>Shop Code</th>
+                      <th>Shop Code</th>
+                      <th>Category Code</th>
+                      <th>Workshop Code</th>
+                      <th>Warehouse Name</th>
+                  </tr>
+                  </thead>
+              <tbody>
+                  <tr>
+                      <td>
+                          <input type="radio" name="select" class="radiobtn" />
+                      </td>
+                      <td>Consumable Common</td>
+                      <td>Local</td>
+                      <td>123456789</td>
+                      <td>123456789</td>
+                      <td>C3231</td>
+                      <td>C3231</td>
+                      <td>C3231</td>
+                      <td>CO-COM</td>
+                      <td>WH1</td>
+                      <td>Wareh</td>
+                  </tr>
       
-              <div class="container2">
-               
-                <div class="header">
-                  <h1>IR01_01: Internal Request Draft/Returned</h1>
-                  <div class="buttons">
-                    <button class="retrieve-btn">Retrieve</button>
-                    <button class="download-btn">Download</button>
-                    <button class="reset-btn">Reset</button>
-                  </div>
+                  <tr>
+                      <td>
+                          <input type="radio" name="select"/>
+                      </td>
+                      <td>Consumable Common</td>
+                      <td>Import</td>
+                      <td>123456789</td>
+                      <td>123456789</td>
+                      <td>C3231</td>
+                      <td>C3231</td>
+                      <td>C3231</td>
+                      <td>CO-COM</td>
+                      <td>WH1</td>
+                      <td>Wareh</td>
+                  </tr>
+      
+                  <tr>
+                      <td>
+                          <input type="radio" name="select" />
+                      </td>
+                      <td>Consumable Common</td>
+                      <td>Local</td>
+                      <td>123456789</td>
+                      <td>123456789</td>
+                      <td>C3231</td>
+                      <td>C3231</td>
+                      <td>C3231</td>
+                      <td>CO-COM</td>
+                      <td>WH1</td>
+                      <td>Wareh</td>
+                  </tr>
+      
+                  <tr>
+                      <td>
+                          <input type="radio" name="select" />
+                      </td>
+                      <td>Consumable Common</td>
+                      <td>Import</td>
+                      <td>123456789</td>
+                      <td>123456789</td>
+                      <td>C3231</td>
+                      <td>C3231</td>
+                      <td>C3231</td>
+                      <td>CO-COM</td>
+                      <td>WH1</td>
+                      <td>Wareh</td>
+                  </tr>
+      
+                  <tr>
+                      <td>
+                          <input type="radio" name="select" />
+                      </td>
+                      <td>Consumable Common</td>
+                      <td>Local</td>
+                      <td>123456789</td>
+                      <td>123456789</td>
+                      <td>C3231</td>
+                      <td>C3231</td>
+                      <td>C3231</td>
+                      <td>CO-COM</td>
+                      <td>WH1</td>
+                      <td>Wareh</td>
+                  </tr>
+              </tbody>
+          </table>
+      
+            <div class="footer">
+              <button class="save-btn">Save</button>
+              <button class="confirm-btn">Confirm</button>
+              <button class="other-btn">Other</button>
+            </div>
+          </div>
+          <div id="container2-2" class="container2">
+            <div class="header">
+              <h1>SR02_01:  Request Download/Download</h1>
+              <div class="buttons">
+                <button class="retrieve-btn">Retrieve</button>
+                <button class="download-btn">Download</button>
+                <button class="reset-btn">Reset</button>
+              </div>
+            </div>
+            <div id="grid1" class="form">
+              <div class="row">
+                <div class="input-group">
+                  <label for="product-group ">Product Group</label>
+                  <input
+                    type="text"
+                    id="product-group"
+                    placeholder="Enter Product Group "/>
+                  <i class="fas fa-search search-icon"></i>
+      
+                
                 </div>
-                <div id="grid1" class="form">
-                  <div class="row">
-                    <div class="input-group">
-                      <label for="product-group ">Product Group</label>
-                      <input
-                        type="text"
-                        id="product-group"
-                        placeholder="Enter Product Group "/>
-                      <i class="fas fa-search search-icon"></i>
-          
-                    
-                    </div>
-                    <div class="input-group">
-                      <label for="sub-group">Sub Group</label>
-                      <input type="text" id="sub-group" placeholder="Enter Sub Group" />
-                      <i class="fas fa-search search-icon2"></i>
-                    </div>
-                    <div class="input-group">
-                      <label for="category">Category</label>
-                      <input
-                        type="text"
-                        id="category"
-                        placeholder="CO-COM: Consumable Common"/>
-                        <i class="fas fa-search search-icon3"></i>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="input-group">
-                      <label for="company-code">Company Code</label>
-                      <input
-                        type="text"
-                        id="company-code"
-                        placeholder="Enter Company Code"
-                      />
-                      <i class="fas fa-search search-icon4"></i>
-                    </div>
-                    <div class="input-group">
-                      <label for="company-code">Part Code</label>
-                      <input
-                        type="text"
-                        id="company-code"
-                        placeholder="Enter Company Code"
-                      />
-                      <i class="fas fa-search search-icon5"></i>
-                    </div>
-                    <div class="input-group">
-                      <label for="part-code">Match Code</label>
-                      <select id="part-code">
-                        <option value="1" class="drop">Select</option>
-                        <option value="1" class="drop">Item 1 is selected</option>
-                        <option value="2" class="drop">Item 2 is hovered</option>
-                        <option value="3" class="drop">Item 3 is being displayed</option>
-                        <option value="3" class="drop">Item 4 is being displayed</option>
-                        <option value="3" class="drop">Item 5 is being displayed</option>
-
-                      </select>
-                    </div>
-                  </div>
-                  <div class="status">
-                    <label>Status</label>
-                    <div class="status1">
-                      <div class="status2">
-                        <input type="radio" name="status" value="new" id="new" />
-                        <label for="new">New</label>
-                        <input
-                          type="radio"
-                          name="status"
-                          value="returned"
-                          id="returned"
-                        />
-                        <label for="returned">Returned</label>
-                        <input
-                          type="radio"
-                          name="status"
-                          value="re-submitted"
-                          id="re-submitted"
-                        />
-                        <label for="re-submitted">Re-Submitted</label>
-                        <input
-                          type="radio"
-                          name="status"
-                          value="rejected"
-                          id="rejected"
-                        />
-                        <label for="rejected">Rejected</label>
-                        <input
-                        type="radio"
-                        name="status"
-                        value="rejected"
-                        id="rejected"
-                      />
-                        <label for="rejected">Submitted</label>
-                        
-
-                      </div>
-                      <div class="actions">
-                        <button class="apply-btn">Apply Filter Conditions</button>
-                      </div>
-                    </div>
-                  </div>
+                <div class="input-group">
+                  <label for="sub-group">Sub Group</label>
+                  <input type="text" id="sub-group" placeholder="Enter Sub Group" />
+                  <i class="fas fa-search search-icon2"></i>
                 </div>
-                <table class="tablewidth">
-                  <thead>    
-                      <tr>
-                          <th>Select</th>
-                          <th>Category Name</th>
-                          <th>Vendor</th>
-                          <th>Part No.(Draft)</th>
-                          <th>EPROC II Part No.</th>
-                          <th>Shop Code</th>
-                          <th>Shop Code</th>
-                          <th>Shop Code</th>
-                          <th>Category Code</th>
-                          <th>Workshop Code</th>
-                          <th>Warehouse Name</th>
-                      </tr>
-                      </thead>
-                  <tbody>
-                      <tr>
-                          <td>
-                              <input type="radio" name="select" class="radiobtn" />
-                          </td>
-                          <td>Consumable Common</td>
-                          <td>Local</td>
-                          <td>123456789</td>
-                          <td>123456789</td>
-                          <td>C3231</td>
-                          <td>C3231</td>
-                          <td>C3231</td>
-                          <td>CO-COM</td>
-                          <td>WH1</td>
-                          <td>Wareh</td>
-                      </tr>
-          
-                      <tr>
-                          <td>
-                              <input type="radio" name="select"/>
-                          </td>
-                          <td>Consumable Common</td>
-                          <td>Import</td>
-                          <td>123456789</td>
-                          <td>123456789</td>
-                          <td>C3231</td>
-                          <td>C3231</td>
-                          <td>C3231</td>
-                          <td>CO-COM</td>
-                          <td>WH1</td>
-                          <td>Wareh</td>
-                      </tr>
-          
-                      <tr>
-                          <td>
-                              <input type="radio" name="select" />
-                          </td>
-                          <td>Consumable Common</td>
-                          <td>Local</td>
-                          <td>123456789</td>
-                          <td>123456789</td>
-                          <td>C3231</td>
-                          <td>C3231</td>
-                          <td>C3231</td>
-                          <td>CO-COM</td>
-                          <td>WH1</td>
-                          <td>Wareh</td>
-                      </tr>
-          
-                      <tr>
-                          <td>
-                              <input type="radio" name="select" />
-                          </td>
-                          <td>Consumable Common</td>
-                          <td>Import</td>
-                          <td>123456789</td>
-                          <td>123456789</td>
-                          <td>C3231</td>
-                          <td>C3231</td>
-                          <td>C3231</td>
-                          <td>CO-COM</td>
-                          <td>WH1</td>
-                          <td>Wareh</td>
-                      </tr>
-          
-                      <tr>
-                          <td>
-                              <input type="radio" name="select" />
-                          </td>
-                          <td>Consumable Common</td>
-                          <td>Local</td>
-                          <td>123456789</td>
-                          <td>123456789</td>
-                          <td>C3231</td>
-                          <td>C3231</td>
-                          <td>C3231</td>
-                          <td>CO-COM</td>
-                          <td>WH1</td>
-                          <td>Wareh</td>
-                      </tr>
-                  </tbody>
-              </table>
-          
-                <div class="footer">
-                  <button class="save-btn">Save</button>
-                  <button class="confirm-btn">Confirm</button>
-                  <button class="other-btn">Other</button>
+                <div class="input-group">
+                  <label for="category">Category</label>
+                  <input
+                    type="text"
+                    id="category"
+                    placeholder="CO-COM: Consumable Common"/>
+                    <i class="fas fa-search search-icon3"></i>
                 </div>
               </div>
+              <div class="row">
+                <div class="input-group">
+                  <label for="company-code">Company Code</label>
+                  <input
+                    type="text"
+                    id="company-code"
+                    placeholder="Enter Company Code"
+                  />
+                  <i class="fas fa-search search-icon4"></i>
+                </div>
+                <div class="input-group">
+                  <label for="company-code">Part Code</label>
+                  <input
+                    type="text"
+                    id="company-code"
+                    placeholder="Enter Company Code"
+                  />
+                  <i class="fas fa-search search-icon5"></i>
+                </div>
+                <div class="input-group">
+                  <label for="part-code">Match Code</label>
+                  <select id="part-code">
+                    <option value="1" class="drop">Select</option>
+                    <option value="1" class="drop">Item 1 is selected</option>
+                    <option value="2" class="drop">Item 2 is hovered</option>
+                    <option value="3" class="drop">Item 3 is being displayed</option>
+                    <option value="3" class="drop">Item 4 is being displayed</option>
+                    <option value="3" class="drop">Item 5 is being displayed</option>
+
+                  </select>
+                </div>
+              </div>
+              <div class="status">
+                <label>Status</label>
+                <div class="status1">
+                  <div class="status2">
+                    <input type="radio" name="status" value="new" id="new" />
+                    <label for="new">New</label>
+                    <input
+                      type="radio"
+                      name="status"
+                      value="returned"
+                      id="returned"
+                    />
+                    <label for="returned">Returned</label>
+                    <input
+                      type="radio"
+                      name="status"
+                      value="re-submitted"
+                      id="re-submitted"
+                    />
+                    <label for="re-submitted">Re-Submitted</label>
+                    <input
+                      type="radio"
+                      name="status"
+                      value="rejected"
+                      id="rejected"
+                    />
+                    <label for="rejected">Rejected</label>
+                    <input
+                    type="radio"
+                    name="status"
+                    value="rejected"
+                    id="rejected"
+                  />
+                    <label for="rejected">Submitted</label>
+                    
+
+                  </div>
+                  <div class="actions">
+                    <button class="apply-btn">Apply Filter Conditions</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <table class="tablewidth">
+              <thead>    
+                  <tr>
+                      <th>Select</th>
+                      <th>Category Name</th>
+                      <th>Vendor</th>
+                      <th>Part No.(Draft)</th>
+                      <th>EPROC II Part No.</th>
+                      <th>Shop Code</th>
+                      <th>Shop Code</th>
+                      <th>Shop Code</th>
+                      <th>Category Code</th>
+                      <th>Workshop Code</th>
+                      <th>Warehouse Name</th>
+                  </tr>
+                  </thead>
+              <tbody>
+                  <tr>
+                      <td>
+                          <input type="radio" name="select" class="radiobtn" />
+                      </td>
+                      <td>Consumable Common</td>
+                      <td>Local</td>
+                      <td>123456789</td>
+                      <td>123456789</td>
+                      <td>C3231</td>
+                      <td>C3231</td>
+                      <td>C3231</td>
+                      <td>CO-COM</td>
+                      <td>WH1</td>
+                      <td>Wareh</td>
+                  </tr>
+      
+                  <tr>
+                      <td>
+                          <input type="radio" name="select"/>
+                      </td>
+                      <td>Consumable Common</td>
+                      <td>Import</td>
+                      <td>123456789</td>
+                      <td>123456789</td>
+                      <td>C3231</td>
+                      <td>C3231</td>
+                      <td>C3231</td>
+                      <td>CO-COM</td>
+                      <td>WH1</td>
+                      <td>Wareh</td>
+                  </tr>
+      
+                  <tr>
+                      <td>
+                          <input type="radio" name="select" />
+                      </td>
+                      <td>Consumable Common</td>
+                      <td>Local</td>
+                      <td>123456789</td>
+                      <td>123456789</td>
+                      <td>C3231</td>
+                      <td>C3231</td>
+                      <td>C3231</td>
+                      <td>CO-COM</td>
+                      <td>WH1</td>
+                      <td>Wareh</td>
+                  </tr>
+      
+                  <tr>
+                      <td>
+                          <input type="radio" name="select" />
+                      </td>
+                      <td>Consumable Common</td>
+                      <td>Import</td>
+                      <td>123456789</td>
+                      <td>123456789</td>
+                      <td>C3231</td>
+                      <td>C3231</td>
+                      <td>C3231</td>
+                      <td>CO-COM</td>
+                      <td>WH1</td>
+                      <td>Wareh</td>
+                  </tr>
+      
+                  <tr>
+                      <td>
+                          <input type="radio" name="select" />
+                      </td>
+                      <td>Consumable Common</td>
+                      <td>Local</td>
+                      <td>123456789</td>
+                      <td>123456789</td>
+                      <td>C3231</td>
+                      <td>C3231</td>
+                      <td>C3231</td>
+                      <td>CO-COM</td>
+                      <td>WH1</td>
+                      <td>Wareh</td>
+                  </tr>
+              </tbody>
+          </table>
+      
+            <div class="footer">
+              <button class="save-btn">Save</button>
+              <button class="confirm-btn">Confirm</button>
+              <button class="other-btn">Other</button>
+            </div>
           </div>
-  
-       
-        </div>
+          <div id="container2-3" class="container2">
+            <div class="header">
+              <h1>YRH01_01:  Request Draft/Returned</h1>
+              <div class="buttons">
+                <button class="retrieve-btn">Retrieve</button>
+                <button class="download-btn">Download</button>
+                <button class="reset-btn">Reset</button>
+              </div>
+            </div>
+            <div id="grid1" class="form">
+              <div class="row">
+                <div class="input-group">
+                  <label for="product-group ">Product Group</label>
+                  <input
+                    type="text"
+                    id="product-group"
+                    placeholder="Enter Product Group "/>
+                  <i class="fas fa-search search-icon"></i>
+      
+                
+                </div>
+                <div class="input-group">
+                  <label for="sub-group">Sub Group</label>
+                  <input type="text" id="sub-group" placeholder="Enter Sub Group" />
+                  <i class="fas fa-search search-icon2"></i>
+                </div>
+                <div class="input-group">
+                  <label for="category">Category</label>
+                  <input
+                    type="text"
+                    id="category"
+                    placeholder="CO-COM: Consumable Common"/>
+                    <i class="fas fa-search search-icon3"></i>
+                </div>
+              </div>
+              <div class="row">
+                <div class="input-group">
+                  <label for="company-code">Company Code</label>
+                  <input
+                    type="text"
+                    id="company-code"
+                    placeholder="Enter Company Code"
+                  />
+                  <i class="fas fa-search search-icon4"></i>
+                </div>
+                <div class="input-group">
+                  <label for="company-code">Part Code</label>
+                  <input
+                    type="text"
+                    id="company-code"
+                    placeholder="Enter Company Code"
+                  />
+                  <i class="fas fa-search search-icon5"></i>
+                </div>
+                <div class="input-group">
+                  <label for="part-code">Match Code</label>
+                  <select id="part-code">
+                    <option value="1" class="drop">Select</option>
+                    <option value="1" class="drop">Item 1 is selected</option>
+                    <option value="2" class="drop">Item 2 is hovered</option>
+                    <option value="3" class="drop">Item 3 is being displayed</option>
+                    <option value="3" class="drop">Item 4 is being displayed</option>
+                    <option value="3" class="drop">Item 5 is being displayed</option>
+
+                  </select>
+                </div>
+              </div>
+              <div class="status">
+                <label>Status</label>
+                <div class="status1">
+                  <div class="status2">
+                    <input type="radio" name="status" value="new" id="new" />
+                    <label for="new">New</label>
+                    <input
+                      type="radio"
+                      name="status"
+                      value="returned"
+                      id="returned"
+                    />
+                    <label for="returned">Returned</label>
+                    <input
+                      type="radio"
+                      name="status"
+                      value="re-submitted"
+                      id="re-submitted"
+                    />
+                    <label for="re-submitted">Re-Submitted</label>
+                    <input
+                      type="radio"
+                      name="status"
+                      value="rejected"
+                      id="rejected"
+                    />
+                    <label for="rejected">Rejected</label>
+                    <input
+                    type="radio"
+                    name="status"
+                    value="rejected"
+                    id="rejected"
+                  />
+                    <label for="rejected">Submitted</label>
+                    
+
+                  </div>
+                  <div class="actions">
+                    <button class="apply-btn">Apply Filter Conditions</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <table class="tablewidth">
+              <thead>    
+                  <tr>
+                      <th>Select</th>
+                      <th>Category Name</th>
+                      <th>Vendor</th>
+                      <th>Part No.(Draft)</th>
+                      <th>EPROC II Part No.</th>
+                      <th>Shop Code</th>
+                      <th>Shop Code</th>
+                      <th>Shop Code</th>
+                      <th>Category Code</th>
+                      <th>Workshop Code</th>
+                      <th>Warehouse Name</th>
+                  </tr>
+                  </thead>
+              <tbody>
+                  <tr>
+                      <td>
+                          <input type="radio" name="select" class="radiobtn" />
+                      </td>
+                      <td>Consumable Common</td>
+                      <td>Local</td>
+                      <td>123456789</td>
+                      <td>123456789</td>
+                      <td>C3231</td>
+                      <td>C3231</td>
+                      <td>C3231</td>
+                      <td>CO-COM</td>
+                      <td>WH1</td>
+                      <td>Wareh</td>
+                  </tr>
+      
+                  <tr>
+                      <td>
+                          <input type="radio" name="select"/>
+                      </td>
+                      <td>Consumable Common</td>
+                      <td>Import</td>
+                      <td>123456789</td>
+                      <td>123456789</td>
+                      <td>C3231</td>
+                      <td>C3231</td>
+                      <td>C3231</td>
+                      <td>CO-COM</td>
+                      <td>WH1</td>
+                      <td>Wareh</td>
+                  </tr>
+      
+                  <tr>
+                      <td>
+                          <input type="radio" name="select" />
+                      </td>
+                      <td>Consumable Common</td>
+                      <td>Local</td>
+                      <td>123456789</td>
+                      <td>123456789</td>
+                      <td>C3231</td>
+                      <td>C3231</td>
+                      <td>C3231</td>
+                      <td>CO-COM</td>
+                      <td>WH1</td>
+                      <td>Wareh</td>
+                  </tr>
+      
+                  <tr>
+                      <td>
+                          <input type="radio" name="select" />
+                      </td>
+                      <td>Consumable Common</td>
+                      <td>Import</td>
+                      <td>123456789</td>
+                      <td>123456789</td>
+                      <td>C3231</td>
+                      <td>C3231</td>
+                      <td>C3231</td>
+                      <td>CO-COM</td>
+                      <td>WH1</td>
+                      <td>Wareh</td>
+                  </tr>
+      
+                  <tr>
+                      <td>
+                          <input type="radio" name="select" />
+                      </td>
+                      <td>Consumable Common</td>
+                      <td>Local</td>
+                      <td>123456789</td>
+                      <td>123456789</td>
+                      <td>C3231</td>
+                      <td>C3231</td>
+                      <td>C3231</td>
+                      <td>CO-COM</td>
+                      <td>WH1</td>
+                      <td>Wareh</td>
+                  </tr>
+              </tbody>
+          </table>
+      
+            <div class="footer">
+              <button class="save-btn">Save</button>
+              <button class="confirm-btn">Confirm</button>
+              <button class="other-btn">Other</button>
+            </div>
+          </div>
+          <div id="container2-4" class="container2">
+            <div class="header">
+              <h1>UY04_01:  Internal_Request Draft/Returned</h1>
+              <div class="buttons">
+                <button class="retrieve-btn">Retrieve</button>
+                <button class="download-btn">Download</button>
+                <button class="reset-btn">Reset</button>
+              </div>
+            </div>
+            <div id="grid1" class="form">
+              <div class="row">
+                <div class="input-group">
+                  <label for="product-group ">Product Group</label>
+                  <input
+                    type="text"
+                    id="product-group"
+                    placeholder="Enter Product Group "/>
+                  <i class="fas fa-search search-icon"></i>
+      
+                
+                </div>
+                <div class="input-group">
+                  <label for="sub-group">Sub Group</label>
+                  <input type="text" id="sub-group" placeholder="Enter Sub Group" />
+                  <i class="fas fa-search search-icon2"></i>
+                </div>
+                <div class="input-group">
+                  <label for="category">Category</label>
+                  <input
+                    type="text"
+                    id="category"
+                    placeholder="CO-COM: Consumable Common"/>
+                    <i class="fas fa-search search-icon3"></i>
+                </div>
+              </div>
+              <div class="row">
+                <div class="input-group">
+                  <label for="company-code">Company Code</label>
+                  <input
+                    type="text"
+                    id="company-code"
+                    placeholder="Enter Company Code"
+                  />
+                  <i class="fas fa-search search-icon4"></i>
+                </div>
+                <div class="input-group">
+                  <label for="company-code">Part Code</label>
+                  <input
+                    type="text"
+                    id="company-code"
+                    placeholder="Enter Company Code"
+                  />
+                  <i class="fas fa-search search-icon5"></i>
+                </div>
+                <div class="input-group">
+                  <label for="part-code">Match Code</label>
+                  <select id="part-code">
+                    <option value="1" class="drop">Select</option>
+                    <option value="1" class="drop">Item 1 is selected</option>
+                    <option value="2" class="drop">Item 2 is hovered</option>
+                    <option value="3" class="drop">Item 3 is being displayed</option>
+                    <option value="3" class="drop">Item 4 is being displayed</option>
+                    <option value="3" class="drop">Item 5 is being displayed</option>
+
+                  </select>
+                </div>
+              </div>
+              <div class="status">
+                <label>Status</label>
+                <div class="status1">
+                  <div class="status2">
+                    <input type="radio" name="status" value="new" id="new" />
+                    <label for="new">New</label>
+                    <input
+                      type="radio"
+                      name="status"
+                      value="returned"
+                      id="returned"
+                    />
+                    <label for="returned">Returned</label>
+                    <input
+                      type="radio"
+                      name="status"
+                      value="re-submitted"
+                      id="re-submitted"
+                    />
+                    <label for="re-submitted">Re-Submitted</label>
+                    <input
+                      type="radio"
+                      name="status"
+                      value="rejected"
+                      id="rejected"
+                    />
+                    <label for="rejected">Rejected</label>
+                    <input
+                    type="radio"
+                    name="status"
+                    value="rejected"
+                    id="rejected"
+                  />
+                    <label for="rejected">Submitted</label>
+                    
+
+                  </div>
+                  <div class="actions">
+                    <button class="apply-btn">Apply Filter Conditions</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <table class="tablewidth">
+              <thead>    
+                  <tr>
+                      <th>Select</th>
+                      <th>Category Name</th>
+                      <th>Vendor</th>
+                      <th>Part No.(Draft)</th>
+                      <th>EPROC II Part No.</th>
+                      <th>Shop Code</th>
+                      <th>Shop Code</th>
+                      <th>Shop Code</th>
+                      <th>Category Code</th>
+                      <th>Workshop Code</th>
+                      <th>Warehouse Name</th>
+                  </tr>
+                  </thead>
+              <tbody>
+                  <tr>
+                      <td>
+                          <input type="radio" name="select" class="radiobtn" />
+                      </td>
+                      <td>Consumable Common</td>
+                      <td>Local</td>
+                      <td>123456789</td>
+                      <td>123456789</td>
+                      <td>C3231</td>
+                      <td>C3231</td>
+                      <td>C3231</td>
+                      <td>CO-COM</td>
+                      <td>WH1</td>
+                      <td>Wareh</td>
+                  </tr>
+      
+                  <tr>
+                      <td>
+                          <input type="radio" name="select"/>
+                      </td>
+                      <td>Consumable Common</td>
+                      <td>Import</td>
+                      <td>123456789</td>
+                      <td>123456789</td>
+                      <td>C3231</td>
+                      <td>C3231</td>
+                      <td>C3231</td>
+                      <td>CO-COM</td>
+                      <td>WH1</td>
+                      <td>Wareh</td>
+                  </tr>
+      
+                  <tr>
+                      <td>
+                          <input type="radio" name="select" />
+                      </td>
+                      <td>Consumable Common</td>
+                      <td>Local</td>
+                      <td>123456789</td>
+                      <td>123456789</td>
+                      <td>C3231</td>
+                      <td>C3231</td>
+                      <td>C3231</td>
+                      <td>CO-COM</td>
+                      <td>WH1</td>
+                      <td>Wareh</td>
+                  </tr>
+      
+                  <tr>
+                      <td>
+                          <input type="radio" name="select" />
+                      </td>
+                      <td>Consumable Common</td>
+                      <td>Import</td>
+                      <td>123456789</td>
+                      <td>123456789</td>
+                      <td>C3231</td>
+                      <td>C3231</td>
+                      <td>C3231</td>
+                      <td>CO-COM</td>
+                      <td>WH1</td>
+                      <td>Wareh</td>
+                  </tr>
+      
+                  <tr>
+                      <td>
+                          <input type="radio" name="select" />
+                      </td>
+                      <td>Consumable Common</td>
+                      <td>Local</td>
+                      <td>123456789</td>
+                      <td>123456789</td>
+                      <td>C3231</td>
+                      <td>C3231</td>
+                      <td>C3231</td>
+                      <td>CO-COM</td>
+                      <td>WH1</td>
+                      <td>Wareh</td>
+                  </tr>
+              </tbody>
+          </table>
+      
+            <div class="footer">
+              <button class="save-btn">Save</button>
+              <button class="confirm-btn">Confirm</button>
+              <button class="other-btn">Other</button>
+            </div>
+          </div>
         </div>
       </div>
     </div>
 
     <script src="./js/script.js"></script>
+    
   </body>
 </html>

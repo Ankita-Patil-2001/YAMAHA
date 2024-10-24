@@ -823,18 +823,9 @@ option {
   align-items: center;
   background-color: transparent;
   border-radius: 5px;
-  padding-left: 20px;
   width: 100%;
 }
-.tab1 {
-  display: flex;
 
-  background-color: white;
-  align-items: center;
-
-  padding: 10px;
-  border-radius: 10px 10px 0 0;
-}
 .tab {
   display: flex;
   align-items: center;
@@ -894,4 +885,44 @@ option {
 }
 .status2 input[type="radio"]:checked {
   background: linear-gradient(90deg, hsl(308, 53%, 82%), #EEB5E0);
+}
+.content {
+  display: none; /* Hide all content sections by default */
+}
+
+.content.active {
+  display: block; /* Show only the active content */
+}
+.content {
+  display: none; /* Hide all content sections by default */
+  height: 100%;
+}
+
+.content.active {
+  display: block; /* Show only the active content */
+}
+.tab.active {
+  background-color: white; /* White background for active tab */
+  color: black; /* Optional: Adjust text color */
+}
+
+.tab {
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  padding: 10px;
+  display: inline-block;
+  border-radius: 5px;
+  background-color: #f0f0f0; /* Default background */
+}
+
+.tab:hover {
+  background-color: #ddd; /* Hover effect */
+}
+
+.content {
+  display: none; /* Hide all content by default */
+}
+
+.content.active {
+  display: block; /* Show active content */
 }
